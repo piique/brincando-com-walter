@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/png" href="img/favico.png" />
+    <title> Ezmoney</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="estilo.css" /> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- <script type="module" src="app.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="cont" class="container" style="
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+">
+        <h1>Nova despesa</h1>
+        <div>
+            <div class="input-row"><label translate="" for="showDescription" class="ng-scope">Descrição</label>
+                <div class="group-field"><input class="descrição" style="width: 100%;">
+                </div>
+            </div>
+
+            <div style="display:flex ;">
+                <div class="input-row"><label translate="" for="showDescription" class="ng-scope">Valor </label>
+                    <div class="group-field" style="padding-right: 20px;"><input class="valor" style=""></div>
+                </div>
+
+                <div class="input-row"><label translate="" for="showDescription" class="ng-scope">Data</label>
+                    <div class="group-field"><input type="date" class="data" style=""></div>
+                </div>
+            </div>
+            <div style="display:flex ;">
+                <div class="input-row"><label translate="" for="showDescription" class="ng-scope">Conta/Cartão</label>
+                    <div class="group-field"  style="padding-right: 20px;"><input  class="conta" style=""></div>
+                </div>
+
+                <div class="input-row"><label translate="" for="showDescription" class="ng-scope">Categoria </label>
+                    <div class="group-field"><input  class="categoria" style=""></div>
+                </div>
+            </div>
+        </div>
+       
+        <button id="save-button" style="padding: 2vw;
+        margin: 2vw;
+        right: 0px;
+        border: none;
+        border-radius: 8px;
+        background: darkgrey;" onclick="window.salvarDados()" class="fa fa-plus"> adicionar despesa</button>
+    </div>
+
+    
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Descrição</th>
+            <th scope="col">Valor</th>
+            <th scope="col">Data</th>
+            <th scope="col">Conta/Cartão</th>
+            <th scope="col">Categoria</th>
+          </tr>
+        </thead>
+        <tbody id="table-body">
+          <!-- <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody> -->
+    </table>
+
+    <!-- <table id="tabela">
+        
+    </table> -->
+
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
