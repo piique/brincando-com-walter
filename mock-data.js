@@ -1,8 +1,9 @@
-/*
-    Mock data for testing
+/**
+ * Mock data for testing
+ *
+ * @author Pedro Vilaça - piique <https://github.com/piique/>
+ */
 
-    @Author: piique - https://github.com/piique/
-*/
 export const mockedData = [
   {
     desc: "Minha putinha chamada Walter",
